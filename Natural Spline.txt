@@ -53,7 +53,7 @@ for i = 1:length(M)-1
     a(i) = (M(i+1) - M(i)) / 6;
 end
 
-Tablea = [a1; a2; a3; a4; a5; a6; a7; a8; a9; a10;];
+Tablea = a(:);
 disp('a_i:');
 disp(Tablea);
 
@@ -61,7 +61,7 @@ for i = 1:length(M)
     b(i) = M(i) / 2;
 end
 
-Tableb = [b1; b2; b3; b4; b5; b6; b7; b8; b9; b10; b11];
+Tableb = b(:);
 disp('b_i:');
 disp(Tableb);
 
@@ -70,10 +70,9 @@ for i = 1:length(M) - 1
     c(i) = (y(i+1) - y(i)) - ((M(i+1) + 2 * M(i)) / 6);
 end
 
-Tablec = [c1; c2; c3; c4; c5; c6; c7; c8; c9; c10;];
+Tablec = c(:);
 disp('c_i:');
 disp(Tablec)
-
 
 d = [y1; y2; y3; y4; y5; y6; y7; y8; y9; y10; y11;];
 
